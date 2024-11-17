@@ -22,7 +22,6 @@ int main()
         }
     }
 
-    printf("Matriz lida:\n");
     for (i = 0; i < linha; i++) {
         for (j = 0; j < coluna; j++) {
             printf("%d ", matriz[i][j]);
