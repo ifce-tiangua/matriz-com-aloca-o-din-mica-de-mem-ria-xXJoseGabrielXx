@@ -27,7 +27,7 @@ int main() {
                 printf(" ");
             }
         }
-        if (i < linha - 1) {
+        if ( linha == 1) {
             printf("\n");
         }
     }
