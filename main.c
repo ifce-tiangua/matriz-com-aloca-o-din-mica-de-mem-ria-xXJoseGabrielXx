@@ -27,9 +27,8 @@ int main() {
                 printf(" ");
             }
         }
-        if ( linha == 1) {
-            printf("\n");
-        }
+        printf("\n");
+
     }
 
     for (i = 0; i < linha; i++) {
