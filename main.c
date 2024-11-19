@@ -1,36 +1,33 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
-	int **matriz;
-	int linha, coluna;
-	int i, j;
+int main() {
+    int **matriz;
+    int linha, coluna;
+    int i, j;
 
-	scanf("%d", &linha);
-	scanf("%d", &coluna);
+    scanf("%d", &linha);
+    scanf("%d", &coluna);
 
-     matriz = (int **)malloc(linha * sizeof(int *));
+    matriz = (int **)malloc(linha * sizeof(int *));
     for (i = 0; i < linha; i++) {
         matriz[i] = (int *)malloc(coluna * sizeof(int));
     }
 
-
     for (i = 0; i < linha; i++) {
-	    if(linha == 1){
-	    printf("\\n");
-	    }
         for (j = 0; j < coluna; j++) {
-		
             scanf("%d", &matriz[i][j]);
         }
     }
 
     for (i = 0; i < linha; i++) {
         for (j = 0; j < coluna; j++) {
-            printf("%d ", matriz[i][j]);
+            printf("%d", matriz[i][j]);
+            if (j < coluna - 1) {
+                printf(" ");
+            }
         }
-        
+        printf("\n");
     }
 
     for (i = 0; i < linha; i++) {
@@ -40,3 +37,4 @@ int main()
 
     return 0;
 }
+
