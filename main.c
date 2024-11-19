@@ -17,7 +17,11 @@ int main()
 
 
     for (i = 0; i < linha; i++) {
+	    if(linha == 1){
+	    printf("\\n");
+	    }
         for (j = 0; j < coluna; j++) {
+		
             scanf("%d", &matriz[i][j]);
         }
     }
